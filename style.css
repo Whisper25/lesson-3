@@ -1,6 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
     font-family: rubik, helvetica, arial, sans-serif;
     font-size: 14px;
+    line-height: 1.6;
 }
 .table-history{
     border-collapse: collapse;
@@ -17,6 +23,8 @@ body{
     margin: auto;
     background-color: rgb(232,233,231);
     padding: 30px;
+    min-width: 720px;
+    max-width: none;
 }
 .table-history th{
     background-color:rgb(234,236,240);
@@ -34,4 +42,35 @@ a{
 }
 img{
     width: 100%;
+}
+.info{
+    width: 85%;
+    margin: auto;
+    background-color: rgb(134, 134, 249);
+    padding: 15px;
+    padding-left: 65px;
+    border-color: rgb(92, 92, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-left-width: 4px;
+
+}
+.w-40{
+    width: 40%;
+}
+.nav-menu{
+    width: 120px;
+    border:1px solid rgb(178, 178, 178);
+    background-color:white;
+
+}
+.title-menu{
+    margin: 0;
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(131, 137, 141);
+    background-color:rgb(234, 236, 240);
+    font-size: 1em; 
+}
+.nav-list{
+    padding-left: 30px;
 }
