@@ -1,0 +1,55 @@
+.main-header{
+    height: 300px;
+    padding-top: 100px;
+    background: linear-gradient(0deg,rgba(227, 227, 227, 1) 0%, rgba(110, 224, 255, 1) 100%);
+    background-image: url(../images/Light_background_grass.png),linear-gradient(0deg,rgba(227, 227, 227, 1) 0%, rgba(110, 224, 255, 1) 100%);;
+    background-repeat: repeat-x, no-repeat;
+    background-position: 0 120px, 0 0;
+}
+main{
+    margin-top: -140px;
+}
+.main-wrapper{
+    min-width: 720px;
+    width: 55%;
+    margin: auto;
+}
+.main-menu{
+    list-style: none;
+    margin: 0;
+}
+.main-menu-item{
+    display: inline-block;
+    margin: 0 1.2m;
+}
+.main-menu-item>a{
+    color:black;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+main-menu-item>a:hover{
+    text-decoration: underline;
+}
+.main-menu-item:hover>.submenu{
+    display: block;
+}
+.submenu{
+    position: absolute;
+    list-style: none;
+    padding: 7px;
+    background-color:white;
+    display: none;
+    min-width: 170px;
+    max-width: 200px;
+}
+.submenu-item{}
+.submenu-link{
+    display: block;
+    padding: 5px 9px;
+    text-transform: capitalize;
+    color:black;
+}
+.submenu-link:hover{
+    background-color:rgb(232, 233, 255);
+    color:rgb(0, 84, 168);
+}

@@ -4,9 +4,11 @@
 
 
 body{
+    margin: 0;
     font-family: rubik, helvetica, arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
+    background-image: url(./assets/images/Site-background-light.webp);
 }
 .table-history{
     border-collapse: collapse;
@@ -19,7 +21,7 @@ body{
     padding: 6px;
 }
 .main-article{
-    width: 45%;
+    width: 55%;
     margin: auto;
     background-color: rgb(232,233,231);
     padding: 30px;
