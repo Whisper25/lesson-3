@@ -17,17 +17,35 @@ main{
 .main-menu{
     list-style: none;
     margin: 0;
+    font-size: 12px;
 }
 .main-menu-item{
     display: inline-block;
-    margin: 0 1.2m;
+    margin: 0 1.2em;
+}
+.main-menu-item::after{
+    content: '\25bc';
+}
+.main-menu-item>.submenu::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #FFFFFF transparent;
+    top: -16px;
+    left: 42%;
+}
+.main-menu-item:hover::after{
+    content: '\25b2';
 }
 .main-menu-item>a{
     color:black;
     text-transform: uppercase;
     font-weight: bolder;
 }
-main-menu-item>a:hover{
+.main-menu-item>a:hover{
     text-decoration: underline;
 }
 .main-menu-item:hover>.submenu{
@@ -41,6 +59,7 @@ main-menu-item>a:hover{
     list-style: none;
     padding: 7px;
     background-color:white;
+    font-size: 14px;
 }
 .left0{
     left: 0;
@@ -55,7 +74,13 @@ main-menu-item>a:hover{
 .submenu-item{
 position: relative;
 }
+.submenu-item:has(>.submenu)::after{
+    content:'\1433';
+    position: absolute;
+    top: 5px;
+    right: 0;
 
+}
 .submenu-link{
     display: block;
     padding: 5px 9px;
@@ -75,4 +100,10 @@ position: relative;
 .submenu-link:hover{
     background-color:rgb(211, 233, 255);
     color: rgb(0, 84, 168);
+}
+.home::before{
+    content: url(../icons/home.svg);
+    display: inline-block;
+    width: 14px;
+    transform: translate(-5px, 2px);
 }
